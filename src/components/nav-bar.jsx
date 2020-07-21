@@ -32,7 +32,6 @@ export default class CustomNav extends Component {
               placeholder="Search all Posts ..."
               className=" mr-sm-2"
               name="search"
-              onChange={this.props.searchHandleChange}
             />
           </Form>
           <Navbar.Collapse>

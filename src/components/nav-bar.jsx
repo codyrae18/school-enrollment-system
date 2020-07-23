@@ -53,7 +53,7 @@ export default class CustomNav extends Component {
                 </Link>
               )}
               {window.localStorage.getItem("username") ? (
-                <h1> {window.localStorage.getItem("username")}</h1>
+                <h1> {window.localStorage.getItem("")}</h1>
               ) : (
                 <div>
                   <Link to="/login">

@@ -63,7 +63,6 @@ export default class CustomNav extends Component {
                 <NavItem>
                   <Button
                     className="search-button"
-                    onClick={this.props.handleClickLogout}
                   >
                     Logout
                   </Button>

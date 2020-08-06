@@ -62,7 +62,6 @@ export default class CustomNav extends Component {
               {window.localStorage.getItem("username") && (
                 <NavItem>
                   <Button
-                    className="search-button"
                   >
                     Logout
                   </Button>

@@ -42,36 +42,31 @@ export default class CustomNav extends Component {
               {!window.localStorage.getItem("username") ? (
                 <h1> {window.localStorage.getItem("username")}</h1>
               ) : (
-                  <Link to="/profile">
-                    <NavItem>Profile</NavItem>
-                  </Link>
-                )}
+                <Link to="/profile">
+                  <NavItem>Profile</NavItem>
+                </Link>
+              )}
               {window.localStorage.getItem("username") ? (
                 <h1> {window.localStorage.getItem("")}</h1>
               ) : (
-                  <div>
-                    <Link to="/login">
-                      <NavItem>Login</NavItem>
-                    </Link>
-                    <Link to="/signup">
-                      <NavItem>Sign Up</NavItem>
-                    </Link>
-                  </div>
-                )}
-
-              {window.localStorage.getItem("username") && (
-                <NavItem>
-                  <Button
-                  >
-                    Logout
-                  </Button>
-                </NavItem>
+                <div>
+                  <Link to="/login">
+                    <NavItem>Login</NavItem>
+                  </Link>
+                  <Link to="/signup">
+                    <NavItem>Sign Up</NavItem>
+                  </Link>
+                </div>
               )}
+
+              <NavItem>
+                <Button>Logout</Button>
+              </NavItem>
             </Nav>
             <Navbar.Toggle />
           </Navbar.Collapse>
         </Navbar>
-      </div >
+      </div>
     );
   }
 }

@@ -54,7 +54,7 @@ export default class CustomNav extends Component {
                     <NavItem>Login</NavItem>
                   </Link>
                   <Link to="/signup">
-                    <NavItem>Sign Up</NavItem>
+                    <NavItem></NavItem>
                   </Link>
                 </div>
               )}
